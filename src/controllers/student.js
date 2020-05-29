@@ -19,7 +19,7 @@ async function getStudent(req, res) {
   if (!student) {
     return res.status(404).json("cannot find this student");
   }
-  return res.json(student);
+  return res.json("fuck hahahah");
 }
 async function getAllStudent(req, res) {
   const students = await Student.find().exec();
