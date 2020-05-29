@@ -6,7 +6,7 @@ const userRouter = require("./routers/user");
 const authRouter = require("./routers/auth");
 const authGuard = require("./middlewares/authGuard");
 
-router.use("/students", studentRouter);
+router.use("/students", authGuard, studentRouter);
 router.use("/courses", authGuard, courseRouter);
 router.use("/users", userRouter);
 router.use("/auth", authRouter);
