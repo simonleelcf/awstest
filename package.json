@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2-runtime start config/ecosystem.config.js --env production"
+    "start": "pm2-runtime start config/ecosystem.config.js --env production",
+    "dev": "nodemon run ./src/index.js"
   },
   "keywords": [],
   "author": "",
